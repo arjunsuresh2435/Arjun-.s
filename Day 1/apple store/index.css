@@ -1,9 +1,13 @@
 body{
-    background-color:whitesmoke;
+    background-color:white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 *{
     padding:0;
     margin: 0;
+    box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -23,23 +27,310 @@ a{
 }
 nav{
     position: fixed;
-    top: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 50px;
-    background-color:transparent;
+    background-color:whitesmoke;
+    z-index: 2000;
 }
 .logo{
     padding-left: 250px;
 }
 .logo1{
-    padding-right:250px ;
+    padding-right:250px;
 }
 .fa-brands{
     font-size: 17px;
 }
-.img1{
-    width: 50%;
-    height: 500px;
-    margin-top: 100px
+
+/* FIXED MAIN SECTION */
+.main{
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    margin: 50px 0 0 0;
+    overflow: hidden;
+    padding: 0;
 }
 
+.write{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f5f5f7;
+    text-align: center;
+    z-index: 10;
+}
+
+.iPhone{
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.pro{
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 400;
+    letter-spacing: .007em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.button{
+    gap: 15px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.but1{
+    border-radius: 20px;
+    background: #0071e3;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.but2{
+    border-radius: 20px;
+    background: black;
+    border-color: #0077ed;
+    padding: 10px 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #0077ed;
+}
+
+.but1:hover{
+    background: #0077ed;
+}
+.but2:hover{
+    background-color: #0077ed;
+    color: white;
+}
+.learn{
+    color: #fff;
+    font-size: 17px;
+}
+.buy{
+    color: #0071e3;
+    font-size: 17px;
+}
+.img1{
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+.img2{
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    margin-top: 0px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    
+    
+}
+.write1{
+    position: absolute;
+    top: 6%;
+    left: 42%;
+    transform: translateX(-10%);
+    color: black;
+    text-align: center;
+    padding-top:0px;
+
+}
+.Air{
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.air{
+    font-size: 24px;
+        line-height: 1.16667;
+        font-weight: 400;
+        letter-spacing: 0.009em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+.second{
+    position: relative;
+    width: 100%;
+    height:50%;
+    padding-top: 10px
+    
+}
+.but3{
+    border-radius: 20px;
+    background:white;
+    border-color: #0077ed;
+    padding: 10px 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #0077ed;
+}
+.but3:hover{
+    background-color: #0077ed;
+    color: white;
+}
+.third {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin :5px;
+    
+}
+
+.img3 {
+    flex: 1; 
+    position: relative;
+    width: 100%
+}
+
+.img4 {
+    flex: 1; 
+    width: 100%;            
+    
+}
+.left, .right{
+    margin: 5px;
+    position: relative;
+}
+.write2{
+    position: absolute;
+    top: 6%;
+    left: 42%;
+    transform: translateX(-10%);
+    color: black;
+    text-align: center;
+    padding-top:0px;
+}
+.iPhone17{
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.phone17{
+     font-size: 19px;
+        line-height: 1.21053;
+        font-weight: 400;
+        letter-spacing: 0.012em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.write3{
+    position: absolute;
+    top: 6%;
+    left: 42%;
+    transform: translateX(-10%);
+    color: black;
+    text-align: center;
+    padding-top:0px;
+}
+.Airpodspro{
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+}
+.airpod{
+       font-size: 19px;
+        line-height: 1.21053;
+        font-weight: 400;
+        letter-spacing: 0.012em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.fourth{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin :5px;
+}
+.write4{
+    position: absolute;
+    top: 6%;
+    left: 42%;
+    transform: translateX(-50%);
+    width: 90%;
+    color: black;
+    text-align: center;
+    padding-left: 60px;
+    padding-top:0px;
+}
+.write5{
+    position: absolute;
+    bottom: 0%;
+    left: 42%;
+    transform: translateX(-50%);
+    width: 90%;
+    color: black;
+    text-align: center;;
+    padding-left: 60px;
+    padding-bottom: 250px;
+}
+.logo2{
+ width: auto;
+ height: 40px;
+ display:block;
+ margin: 0 auto 10px auto;
+}
+
+
+.watch{ 
+    font-size: 19px;
+        line-height: 1.21053;
+        font-weight: 400;
+        letter-spacing: 0.012em;
+        margin-top: 8px;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.watch1{
+     font-size: 19px;
+        line-height: 1.21053;
+        font-weight: 400;
+        letter-spacing: 0.012em;
+        margin-top: 8px;;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.left1,.right1{
+    flex:1;
+     margin: 5px;
+     height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+.img5{
+    flex: 1; 
+    position: relative;
+    object-fit: cover;
+    display: block;
+    transform:scale(1.9);
+    transform-origin: center;
+    width: 100%;
+}
+.img6{
+    flex: 1; 
+    width: 100%;
+    height: 310px;
+    position: relative;
+    object-fit: cover;
+     transform:scale(2.0);
+    display: block;
+    margin-top: 150px;     
+}
