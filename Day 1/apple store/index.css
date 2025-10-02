@@ -113,7 +113,7 @@ nav{
     background: #0077ed;
 }
 .but2:hover{
-    background-color: #0077ed;
+     background-color: #0077ed; 
     color: white;
 }
 .learn{
@@ -218,6 +218,7 @@ nav{
     color: black;
     text-align: center;
     padding-top:0px;
+    font-size: 20px;
 }
 .iPhone17{
     color: black;
@@ -256,11 +257,11 @@ nav{
         font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .fourth{
-    flex: 1;
+    /* flex: 1; */
     width: 100%;
-    height: 100%;
     display: flex;
     margin :5px;
+    
 }
 .write4{
     position: absolute;
@@ -282,7 +283,7 @@ nav{
     color: black;
     text-align: center;;
     padding-left: 60px;
-    padding-bottom: 250px;
+    padding-bottom: 50px;
 }
 .logo2{
  width: auto;
@@ -311,7 +312,7 @@ nav{
 .left1,.right1{
     flex:1;
      margin: 5px;
-     height: 800px;
+     height: 600px;
     position: relative;
     overflow: hidden;
 }
@@ -323,14 +324,140 @@ nav{
     transform:scale(1.9);
     transform-origin: center;
     width: 100%;
+    height: 450px;
 }
 .img6{
     flex: 1; 
     width: 100%;
-    height: 310px;
+    height: 340px;
     position: relative;
     object-fit: cover;
      transform:scale(2.0);
     display: block;
     margin-top: 150px;     
 }
+.five {
+    display: flex;
+    height: 600px;
+    width: 100%;
+    gap: 10px;
+    margin: 5px;
+}
+
+.left2, .right2 {
+    flex: 1;
+    height: 580px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    margin-bottom: 500px;
+}
+
+.img7 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 300px;
+}
+
+.img8 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.write6, .write7 {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.logo2, .logo3 {
+    max-width: 200px;
+    height: auto;
+}
+
+.watch2, .watch3 {
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: 0.011em;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.watch2{
+    color: #fff;
+}
+.button{
+    gap: 15px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.but1{
+    border-radius: 20px;
+    background: #0071e3;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.but2{
+    border-radius: 20px;
+    background: black;
+    border-color: #0077ed;
+    padding: 10px 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #0077ed;
+}
+
+.but1:hover{
+    background: #0077ed;
+}
+.but2:hover{
+    background-color: #0077ed;
+    color: white;
+}
+.learn {
+    color: white;
+    text-decoration: none;
+}
+
+.learn:hover {
+    text-decoration: underline;
+}
+.slider{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.slides{
+    flex: 0 0 80%;
+  width: 80%;
+  height: 100vh;
+  transition: transform 0.8s ease-in-out;
+  scroll-snap-align:center;
+}
+.slides img{
+    width: 1200px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    margin-bottom: 700px;
+}
+
